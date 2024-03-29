@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './Testimonials.module.css';
 
-export default function Testimonials({ testimonials }) {
+export default function Testimonials({  }) {
   return (
     <div className={styles.testimonialsWrapper}>
       <h3>Testimonials</h3>
-      <ul className={styles.testimonialsList}>
+      {/* <ul className={styles.testimonialsList}>
         {testimonials.map((testimonial, index) => (
           <li className={styles.testimonial} key={index}>
             <div className={styles.authorInfo}>
@@ -14,7 +14,7 @@ export default function Testimonials({ testimonials }) {
             <p className={styles.testimonialContent}>"{testimonial.content}"</p>
           </li>
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 }

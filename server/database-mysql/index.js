@@ -34,6 +34,7 @@ const Doctor = sequelize.define('Doctor', {
   imageUrl: {
     type: DataTypes.STRING,
     defaultValue: '',
+    allowNull:true,
   },
   name: {
     type: DataTypes.STRING,

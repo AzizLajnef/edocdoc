@@ -3,7 +3,7 @@ import DoctorInfo from '../DoctorInfo/DoctorInfo';
 import Testimonials from '../Testimonials/Testimonials';
 import AppointmentCard from '../AppointmentCard/AppointmentCard';
 import axios from 'axios'; 
-
+import DoctorProfile.module.css
 const DoctorProfile = () => {
   const [doctorData, setDoctorData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -44,9 +44,9 @@ const DoctorProfile = () => {
           name={doctorData.name}
           specialty={doctorData.specialty}
           picture={doctorData.imageUrl}
-          ratings={doctorData.reviews.rating}
+          // ratings={doctorData.reviews.rating}
         />
-        <Testimonials testimonials={doctorData.reviews.testimonials} />
+        {/* <Testimonials testimonials={doctorData.reviews.testimonials} /> */}
       </div>
       <div className="right-section">
         <h3>Upcoming Appointments</h3>
