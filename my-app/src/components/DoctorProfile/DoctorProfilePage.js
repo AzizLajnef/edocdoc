@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import DoctorInfo from '../DoctorInfo/DoctorInfo';
-import Testimonials from '../Testimonials/Testimonials';
+// import Testimonials from '../Testimonials/Testimonials';
 import AppointmentCard from '../AppointmentCard/AppointmentCard';
 import axios from 'axios'; 
-import DoctorProfile.module.css
+import '../DoctorInfo/DoctorProfile.css'
 const DoctorProfile = () => {
   const [doctorData, setDoctorData] = useState(null);
   const [loading, setLoading] = useState(true);

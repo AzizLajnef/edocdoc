@@ -1,3 +1,6 @@
+*{
+ background-color: red; 
+}
 .doctor-profile-container {
     display: flex;
     flex-wrap: wrap;
