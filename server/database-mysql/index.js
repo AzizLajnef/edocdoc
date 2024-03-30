@@ -31,24 +31,41 @@ const User = sequelize.define('User', {
 
 
 const Doctor = sequelize.define('Doctor', {
-  imageUrl: {
+  FirstName: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  LastName: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+
+  Username: {
+    type: DataTypes.STRING,
+    allowNull: false,
+    unique: true,
+  },
+  Email: {
+    type: DataTypes.STRING,
+    allowNull: false,
+    unique: true,
+  },
+  Password: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  PhoneNumber: {
+    type: DataTypes.STRING,
+    allowNull: true,
+  },
+  ImageUrl: {
     type: DataTypes.STRING,
     defaultValue: '',
-    allowNull:true,
+    allowNull: false
   },
-  name: {
+  Speciality: {
     type: DataTypes.STRING,
     allowNull: false,
-  },
-  reviews: {
-    type: DataTypes.JSON,
-    allowNull: false,
-    defaultValue: []
-  },
-  appointments: {
-    type: DataTypes.JSON,
-    allowNull: false,
-    defaultValue: []
   },
 });
 
