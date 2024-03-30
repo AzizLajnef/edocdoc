@@ -61,9 +61,9 @@
 }
 
 .profile-picture {
-  max-width: 100px; /* Or the size you want */
+  max-width: 100px; 
   position: absolute;
-  top: 10px; /* Adjust as necessary for correct positioning */
-  left: 10px; /* Adjust as necessary for correct positioning */
-  z-index: 10; /* Ensure it is above other content if necessary */
+  top: 10px; 
+  left: 10px; 
+  z-index: 10; 
 }

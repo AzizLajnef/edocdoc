@@ -1,4 +1,4 @@
-/* DoctorInfo.module.css */
+
 .doctorInfoCard {
   background-color: #007E85;
   border-radius: 0.5rem;
@@ -48,19 +48,19 @@
 }
 
 .editProfileButton {
-  background-color: #007E85; /* Specified color */
-  color: white; /* White text for contrast */
-  margin-top: 15px; /* Spacing above the button */
-  border: none; /* No border for a cleaner look */
+  background-color: #007E85; 
+  color: white; 
+  margin-top: 15px; 
+  border: none; 
 }
 
 .editProfileButton:hover {
-  background-color: darken(#007E85, 10%); /* Darken on hover for feedback */
+  background-color: darken(#007E85, 10%); 
   color: rgb(194, 17, 105);
 }
 
 .ratingWrapper {
   display: flex;
   justify-content: center;
-  margin-top: 10px; /* Adjust as needed */
+  margin-top: 10px; 
 }

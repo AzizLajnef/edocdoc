@@ -69,6 +69,16 @@ const Doctor = sequelize.define('Doctor', {
   },
 });
 
+const Message = sequelize.define('Message', {
+  content: {
+    type: DataTypes.TEXT,
+    allowNull: false,
+  },
+  senderId: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
+  });
 
 const Appointment = sequelize.define('Appointment', {
 
@@ -150,6 +160,7 @@ RatingsComments.belongsTo(Doctor);
 module.exports = {
   User,
   Doctor,
+  Message,
   Appointment,
   RatingsComments,
   Admin,
